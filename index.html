@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Kalkulator</title>
+    <link rel="stylesheet" type="text/css" href="style.css"> 
+    <style>
+    
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <ul>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="index.html">Kalkulator Aritmatika</a></li>
+            </ul>
+        </nav>
+    </header>
+        <div class="container">
+            <h1>Kalkulator Aritmatika</h1>
+        </div>
+    
+    <div class="container">
+        <h2>Deret Fibonacci</h2>
+        <div class="form-group">
+            <label for="inputVariable">Masukkan Variabel:</label>
+            <input type="number" id="inputVariable" placeholder="Input Angka Positif" class="form-control">
+        </div>
+        <button class="btn" onclick="hitungFibonacci()">Hitung Deret Fibonacci</button>
+        <div id="hasilPerhitungan"></div>
+    </div>
+    
+    <div class="container">
+        <h2>Menghitung Volume Bangun Ruang</h2><br>
+        <p>Menghitung Volume Kubus</p><br>
+        <div class="form-group">
+            <label for="inputVolume">Masukkan Angka:</label>
+            <input type="number" id="inputVolume" placeholder="Masukkan Panjang Sisi" class="form-control">
+        </div>
+        <button class="btn" onclick="hitungVolume()">Hitung Volume Bangun Ruang Kubus</button>
+        <div id="hasilPerhitunganVolume"></div>
+    </div>
+    
+    <div class="container">
+        <p>Menghitung Volume Balok</p>
+        <div class="form-group">
+            <label for="panjangBalok">Panjang Balok:</label>
+            <input type="number" id="panjangBalok" placeholder="Masukkan Panjang" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="lebarBalok">Lebar Balok:</label>
+            <input type="number" id="lebarBalok" placeholder="Masukkan Lebar" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="tinggiBalok">Tinggi Balok:</label>
+            <input type="number" id="tinggiBalok" placeholder="Masukkan Tinggi" class="form-control">
+        </div>
+        <button class="btn" onclick="hitungVolumeBalok()">Hitung Volume Balok</button>
+        <div id="hasilPerhitunganVolumeBalok"></div>
+    </div>
+    
+    <div class="container">
+        <label for="warnaSelector" id="labelwarnaSelector">Pilih Warna Latar Belakang</label><br>
+        <div class="form-group" id="ubahWarna"> <br>
+            <select id="warnaSelector" onchange="ubahWarna(this.value)">
+                <option value="default">Default</option>
+                <option value="biru">Biru</option>
+                <option value="darktheme">Dark Theme</option>
+                <option value="hijau">Hijau</option>
+                <option value="abuabu">Abu-abu</option>
+            </select>
+        </div>
+    </div>
+    
+    <script src="fibonacci/script.js"></script>
+    <script src="bangun_ruang_kubus/kubus.js"></script>
+    <script src="bangun_ruang_balok/balok.js"></script>
+    <script src="ganti_warna/warna.js"></script>
+    
+    <script>
+        // Ambil warna latar belakang dari local storage saat halaman dimuat
+        window.onload = function() {
+            const warnaLatarBelakang = localStorage.getItem('warnaLatarBelakang');
+            if (warnaLatarBelakang) {
+                document.body.style.backgroundColor = warnaLatarBelakang;
+            }
+        };
+    </script>
+</body>
+</html>

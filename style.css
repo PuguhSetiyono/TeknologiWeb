@@ -1,0 +1,208 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: left;
+    margin: 20px;
+}
+
+header {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+    font-size: 30px; 
+    font-weight: bold; 
+    color: #333; 
+}
+
+h1 {
+    color: #333;
+    font-size: 28px; 
+    font-weight: bold;
+    
+}
+
+h2 {
+    color: #333;
+    font-size: 28px; 
+    font-weight: bold;
+}
+h3 {
+    color: #333;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: right; 
+    position: absolute; 
+    top: 10%; 
+    right: 10%; 
+    left: 5%;
+}
+
+
+p {
+    color: #333;
+    font-size: 20px; 
+    font-weight: bold;
+    text-align: left;
+}
+
+label {
+    color: #333;
+    font-size: 15px; 
+    font-weight: bold;
+    text-align: left;
+}
+#labelwarnaSelector {
+    color: #333;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: right;
+    position: absolute;
+    top: 10%;
+    right: 3%;
+}
+#ubahWarna {
+    position: absolute;
+    top: 15%;
+    right: 3%;
+}
+
+input {
+    padding: 5px;
+    margin: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+select {
+    color: #504d4d;
+    font-size: 15px; 
+    font-weight: bold;
+    background-color: #e9ebec;
+}
+
+#hasilPerhitungan {
+    font-weight: bold;
+    margin-top: 30px;
+    color: #504d4d;
+}
+#hasilPerhitunganVolume {
+    font-weight: bold;
+    margin-top: 30px;
+    color: #504d4d;
+}
+
+#hasilPerhitunganVolumeBalok {
+    font-weight: bold;
+    margin-top: 30px;
+    color: #504d4d;
+}
+
+
+@media (max-width: 768px) {
+    header {
+        font-size: 24px;
+    }
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    
+}
+
+.left-nav {
+    float: left; 
+    margin-right: 20px; 
+}
+
+.left-nav ul {
+    list-style: none; 
+    padding: 0; 
+}
+
+.left-nav ul li {
+    display: inline; 
+    margin-right: 10px; 
+}
+
+.left-nav ul li a {
+    text-decoration: none; 
+    color: #007BFF; 
+}
+
+    .content {
+        width: 100%;
+        float: none;
+    }
+    .sidebar {
+        width: 100%;
+        float: none;
+    }
+}
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+}
+
+li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-family: serif;
+}
+
+/* Mengatur tampilan ul dan li dalam bentuk card */
+ul {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    padding: 20px;
+}
+
+
+@media (min-width: 769px) {
+    header {
+        font-size: 36px;
+    }
+    nav {
+        display: block;
+            float: left;
+    }
+    .content {
+        width: 70%;
+        float: left;
+    }
+    .sidebar {
+        width: 30%;
+        float: right;
+    }
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    border: none;
+}
+
+th, td {
+    border: none ;
+    padding: 8px;
+    text-align: left;
+    font-family: serif;
+    font-weight: bold;
+}
+

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil</title>
+    <link rel="stylesheet" type="text/css" href="style.css"> 
+    
+    <style>
+    
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <ul>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="index.html">Kalkulator Aritmatika</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class=" container">
+        <h1>Profil Mahasiswa</h1>
+        <img src="profil.jpg"width="300" height="400">
+        <table>
+            <tr>
+                <td>Nama </td>
+                <td>: Puguh Setiyono</td>
+            </tr>
+            <tr>
+                <td>NIM</td>
+                <td>: 2215101081</td>
+            </tr>
+            <tr>
+                <td>Program Studi</td>
+                <td>: Ilmu Komputer</td>
+            </tr>
+            <tr>
+                <td>Semester</td>
+                <td>: 3</td>
+            </tr>
+            <tr>
+                <td>Status Mahasiswa</td>
+                <td>: Aktif</td>
+            </tr>
+        </table>
+</div>
+
+<div class="container">
+    <label for="warnaSelector" id="labelwarnaSelector">Pilih Warna Latar Belakang</label><br>
+    <div class="form-group" id="ubahWarna"> <br>
+        <select id="warnaSelector" onchange="ubahWarna(this.value)">
+            <option value="default">Default</option>
+            <option value="biru">Biru</option>
+            <option value="darktheme">Dark Theme</option>
+            <option value="hijau">Hijau</option>
+            <option value="abuabu">Abu-abu</option>
+            <script src="ganti_warna/warna.js"></script>
+        </select>
+    </div>
+</div>
+</body>
+</html>
